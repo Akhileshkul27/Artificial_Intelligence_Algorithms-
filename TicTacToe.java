@@ -33,7 +33,12 @@ public class TicTacToe {
                     System.out.println("It's a draw!");
                     gameOver = true;
                 } else {
-                    player = (player.equals("x")) ? "o" : "x";
+                    if(player=="x"){
+                        player = "o";
+                    }
+                    else if (player=="o"){
+                        player = "x";
+                    }
                 }
             } else {
                 System.out.println("Invalid move! Try again.");
